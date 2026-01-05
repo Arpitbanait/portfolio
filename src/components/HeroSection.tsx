@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -46,7 +46,7 @@ const HeroSection = () => {
 
         <div className="flex items-center justify-center gap-6 animate-fade-in-up delay-400">
           <a
-            href="https://github.com"
+            href="https://github.com/Arpitbanait"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-all"
@@ -54,18 +54,12 @@ const HeroSection = () => {
             <Github className="w-6 h-6" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/arpit-banait-350238283"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-all"
           >
             <Linkedin className="w-6 h-6" />
-          </a>
-          <a
-            href="mailto:your.email@example.com"
-            className="p-3 rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-all"
-          >
-            <Mail className="w-6 h-6" />
           </a>
         </div>
       </div>
