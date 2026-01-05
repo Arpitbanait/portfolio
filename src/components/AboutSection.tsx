@@ -1,4 +1,4 @@
-import { Code2, Brain, Sparkles, Database } from "lucide-react";
+import { Code2, Brain, Sparkles, Database, Bot, Cpu, Zap, BarChart3 } from "lucide-react";
 
 const highlights = [
   {
@@ -21,6 +21,29 @@ const highlights = [
     title: "Data Engineer",
     description: "Designing scalable data pipelines and systems",
   },
+];
+
+const skillDetails = [
+  {
+    icon: Bot,
+    title: "Generative AI Expertise",
+    summary: "Building production-ready LLM applications, implementing RAG architectures with vector databases (Pinecone, Chroma, FAISS), fine-tuning large language models, and developing AI agents for complex workflows. Proficient in LangChain, LlamaIndex, OpenAI APIs, and prompt engineering techniques for optimal model performance."
+  },
+  {
+    icon: Cpu,
+    title: "Machine Learning & Deep Learning",
+    summary: "Expert in Neural Networks, CNNs, RNNs, LSTMs, and Transformers. Building end-to-end ML pipelines with TensorFlow, PyTorch, and Scikit-learn. Specializing in NLP, computer vision, time series forecasting, and model optimization. Extensive experience with transfer learning, hyperparameter tuning, model deployment, and MLOps practices."
+  },
+  {
+    icon: Zap,
+    title: "Backend Development",
+    summary: "Architecting scalable and robust APIs with FastAPI and Django. Integrating AI models into production systems, designing RESTful APIs, database optimization with PostgreSQL and MongoDB. Implementing microservices architecture, containerization with Docker, and CI/CD pipelines for seamless deployment of AI applications."
+  },
+  {
+    icon: BarChart3,
+    title: "Data Analysis & Visualization",
+    summary: "Advanced analytics using Pandas, NumPy, and Matplotlib. Statistical modeling, A/B testing, exploratory data analysis (EDA), feature engineering, and data preprocessing. Creating interactive dashboards with Plotly and Streamlit. Extracting actionable insights from complex datasets and communicating findings through compelling visualizations."
+  }
 ];
 
 const AboutSection = () => {
@@ -74,6 +97,40 @@ const AboutSection = () => {
                 </h3>
                 <p className="text-sm text-muted-foreground">
                   {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Detailed Skills Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              Core <span className="text-gradient">Skills</span>
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Deep dive into my technical expertise and capabilities
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {skillDetails.map((skill, index) => (
+              <div
+                key={skill.title}
+                className="p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 card-glow"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center flex-shrink-0">
+                    <skill.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-foreground pt-2">
+                    {skill.title}
+                  </h4>
+                </div>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {skill.summary}
                 </p>
               </div>
             ))}

@@ -1,33 +1,33 @@
-import { Mail, Linkedin, Github, Twitter, MapPin } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, MapPin } from "lucide-react";
 
 const contactLinks = [
   {
     icon: Mail,
     label: "Email",
-    value: "your.email@example.com",
-    href: "mailto:your.email@example.com",
+    value: "arpitbanait@gmail.com",
+    href: "mailto:arpitbanait@gmail.com",
     color: "hover:text-primary",
+  },
+  {
+    icon: Phone,
+    label: "Contact",
+    value: "+91 82373 87044",
+    href: "tel:+918237387044",
+    color: "hover:text-genai",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/yourprofile",
-    href: "https://linkedin.com/in/yourprofile",
+    value: "linkedin.com/in/arpit-banait-350238283",
+    href: "https://www.linkedin.com/in/arpit-banait-350238283",
     color: "hover:text-mldl",
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/yourusername",
-    href: "https://github.com/yourusername",
+    value: "github.com/Arpitbanait",
+    href: "https://github.com/Arpitbanait",
     color: "hover:text-foreground",
-  },
-  {
-    icon: Twitter,
-    label: "Twitter",
-    value: "@yourhandle",
-    href: "https://twitter.com/yourhandle",
-    color: "hover:text-mldl",
   },
 ];
 

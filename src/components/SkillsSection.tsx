@@ -1,4 +1,4 @@
-import { Sparkles, Brain, Eye, Server, Database } from "lucide-react";
+import { Sparkles, Brain, Eye, Server, Database, BarChart3 } from "lucide-react";
 
 interface SkillCategory {
   id: string;
@@ -91,6 +91,22 @@ const skillCategories: SkillCategory[] = [
       { name: "Data Modeling", level: 85 },
     ],
   },
+  {
+    id: "dataanalysis",
+    title: "Data Analysis",
+    icon: BarChart3,
+    color: "text-dataanalysis",
+    bgColor: "bg-dataanalysis/10",
+    borderColor: "border-dataanalysis/30",
+    skills: [
+      { name: "Python", level: 95 },
+      { name: "SQL", level: 90 },
+      { name: "Pandas / NumPy", level: 92 },
+      { name: "Power BI", level: 88 },
+      { name: "Excel / VBA", level: 85 },
+      { name: "Exploratory Data Analysis (EDA)", level: 90 },
+    ],
+  },
 ];
 
 const SkillCard = ({ category }: { category: SkillCategory }) => {
@@ -148,7 +164,7 @@ const SkillsSection = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit spanning AI/ML, Computer Vision, Backend
-            Development, and Database technologies
+            Development, Database technologies, and Data Analysis
           </p>
         </div>
 

@@ -10,41 +10,41 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse-glow delay-1000" />
 
-      <div className="container mx-auto px-6 text-center relative z-10">
+      <div className="container mx-auto px-6 lg:px-12 text-center relative z-10">
         <div className="animate-fade-in">
-          <span className="inline-block px-4 py-2 bg-muted rounded-full text-sm font-medium text-muted-foreground mb-6">
+          <span className="inline-block px-4 py-2 bg-muted rounded-full text-xs md:text-sm font-medium text-muted-foreground mb-8">
             👋 Welcome to my portfolio
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in-up">
           <span className="text-foreground">Hi, I'm </span>
-          <span className="text-gradient">Your Name</span>
+          <span className="text-gradient">Arpit Banait</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in-up delay-200">
-          AI/ML Engineer specializing in{" "}
-          <span className="text-primary">Generative AI</span>,{" "}
+        <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 animate-fade-in-up delay-200">
+          GenAI Engineer & Full-Stack ML Developer specializing in{" "}
+          <span className="text-primary">RAG Systems</span>,{" "}
           <span className="text-secondary">Deep Learning</span>, and{" "}
-          <span className="text-accent">Computer Vision</span>
+          <span className="text-accent">Data Analysis</span>
         </p>
 
-        <div className="flex items-center justify-center gap-4 mb-12 animate-fade-in-up delay-300">
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-10 animate-fade-in-up delay-300">
           <a
             href="#projects"
-            className="px-8 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-all glow"
+            className="px-6 md:px-8 py-2.5 md:py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground text-sm md:text-base font-semibold rounded-lg hover:opacity-90 transition-all glow"
           >
             View My Work
           </a>
           <a
             href="#about"
-            className="px-8 py-3 border border-border text-foreground font-semibold rounded-lg hover:bg-muted transition-all"
+            className="px-6 md:px-8 py-2.5 md:py-3 border border-border text-foreground text-sm md:text-base font-semibold rounded-lg hover:bg-muted transition-all"
           >
             Learn More
           </a>
         </div>
 
-        <div className="flex items-center justify-center gap-6 animate-fade-in-up delay-500">
+        <div className="flex items-center justify-center gap-6 animate-fade-in-up delay-400">
           <a
             href="https://github.com"
             target="_blank"
