@@ -63,22 +63,13 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm an AI/ML Engineer with a passion for building intelligent
-              systems that solve real-world problems. With expertise spanning
-              Generative AI, Deep Learning, Computer Vision, and Full-Stack
-              Development, I bring a unique perspective to every project.
+              I'm an undergraduate student at Indian Institute of Information Technology (IIIT) Nagpur with a strong interest in AI/ML engineering. I'm passionate about building intelligent systems that solve real-world problems using cutting-edge technologies.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My journey in technology has led me to work on cutting-edge
-              projects involving large language models, neural network
-              architectures, and scalable backend systems. I thrive on
-              challenges that require both technical depth and creative
-              problem-solving.
+              My focus areas include Generative AI, Deep Learning, Computer Vision, and Full-Stack Development. I'm actively working on projects involving large language models, neural network architectures, and scalable backend systems. I thrive on challenges that require both technical depth and creative problem-solving.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring the latest research
-              papers, contributing to open-source projects, or mentoring
-              aspiring developers in the AI/ML space.
+              When I'm not coding, you'll find me exploring the latest research papers, contributing to open-source projects, or learning about emerging AI technologies that push the boundaries of what's possible.
             </p>
           </div>
 
@@ -97,40 +88,6 @@ const AboutSection = () => {
                 </h3>
                 <p className="text-sm text-muted-foreground">
                   {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Detailed Skills Section */}
-        <div className="mt-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Core <span className="text-gradient">Skills</span>
-            </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Deep dive into my technical expertise and capabilities
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {skillDetails.map((skill, index) => (
-              <div
-                key={skill.title}
-                className="p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 card-glow"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center flex-shrink-0">
-                    <skill.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="text-xl font-semibold text-foreground pt-2">
-                    {skill.title}
-                  </h4>
-                </div>
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                  {skill.summary}
                 </p>
               </div>
             ))}

@@ -93,14 +93,6 @@ const projectsByCategory = {
         image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop",
       },
       {
-        id: "10",
-        title: "Customer Churn Prediction",
-        description: "ML model predicting customer churn with feature analysis and retention strategies.",
-        tags: ["Classification", "Scikit-learn", "Pandas", "Feature Engineering"],
-        github: "https://github.com/ArpitBanait/Customer-Churn-Prediction",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      },
-      {
         id: "11",
         title: "Movie Recommendation System",
         description: "Collaborative filtering recommendation system for personalized movie suggestions.",
